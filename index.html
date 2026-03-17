@@ -204,8 +204,8 @@ footer{border-top:1px solid rgba(255,255,255,.05);padding:28px 64px;display:flex
 footer p{font-size:11px;color:var(--tx3);font-family:'JetBrains Mono',monospace}
 
 /* REVEAL */
-.rv{opacity:0;transform:translateY(26px);transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1)}
-.rv.in{opacity:1;transform:translateY(0)}
+.rv{opacity:1;transform:none}
+.rv.in{opacity:1;transform:none}
 
 /* RESPONSIVE */
 @media(max-width:960px){nav,section,footer{padding-left:20px;padding-right:20px}.nav-in{padding:16px 0}.navl li:not(:last-child){display:none}.hero{padding:110px 20px 80px}.edu-row{grid-template-columns:1fr}.pgrid{grid-template-columns:1fr 1fr}.tl{padding-left:0}.te-dot{display:none}.fc-top{flex-direction:column}.fc-right{text-align:left}}
@@ -240,7 +240,7 @@ footer p{font-size:11px;color:var(--tx3);font-family:'JetBrains Mono',monospace}
     <span class="line2">SINGH</span>
   </div>
   <div class="hero-sub rv" style="transition-delay:.15s" id="typed-row"><span id="typed"></span><span style="display:inline-block;width:2px;height:14px;background:var(--v2);margin-left:3px;vertical-align:middle;animation:blink2 1s step-end infinite"></span></div>
-  <p class="hero-desc rv" style="transition-delay:.22s">Building products that scale. <strong>9+ years</strong> of software engineering across full-stack development, cloud platforms &amp; enterprise tooling. Specializing in <strong>Python, React &amp; TypeScript</strong>.</p>
+  <p class="hero-desc rv" style="transition-delay:.22s">Building products that scale. <strong>9+ years</strong> of software engineering across full-stack development, cloud platforms, AI/ML integration &amp; enterprise tooling. Specializing in <strong>Python, React, TypeScript &amp; AI systems</strong>.</p>
   <div class="hero-acts rv" style="transition-delay:.29s">
     <a href="#contact" class="btn-g"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Get in touch</a>
     <a href="#featured" class="btn-o">View my work <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
@@ -268,12 +268,12 @@ footer p{font-size:11px;color:var(--tx3);font-family:'JetBrains Mono',monospace}
         </div>
       </div>
       <ul class="fc-buls">
-        <li>Led development of an <strong>enterprise PII detection platform</strong> (Python, asyncio, Grafana Loki) scanning 24+ microservices with automated compliance classification for SSN, DOB, VIN, and DL.</li>
+        <li>Led development of an <strong>enterprise PII detection platform</strong> using Python, asyncio &amp; Grafana Loki &mdash; leveraging AI-powered pattern recognition to scan 24+ microservices with automated compliance classification for SSN, DOB, VIN, and DL.</li>
         <li>Spearheaded a <strong>React + TypeScript PII dashboard</strong> with RBAC and compliance export functionality &mdash; reducing manual security audits by <strong>90%</strong>.</li>
         <li>Owned a <strong>Python DevOps automation suite</strong> using Azure DevOps APIs, transforming app decommissioning from a multi-hour manual task into a single automated run.</li>
       </ul>
       <div class="stack-tags">
-        <span class="st v">Python</span><span class="st v">asyncio</span><span class="st t">React</span><span class="st t">TypeScript</span><span class="st p">Grafana Loki</span><span class="st p">RBAC</span><span class="st y">Azure DevOps APIs</span><span class="st y">PII Compliance</span>
+        <span class="st v">Python</span><span class="st v">asyncio</span><span class="st t">React</span><span class="st t">TypeScript</span><span class="st p">Grafana Loki</span><span class="st p">RBAC</span><span class="st y">Azure DevOps APIs</span><span class="st y">PII Compliance</span><span class="st v">AI Pattern Recognition</span><span class="st t">LLM</span>
       </div>
     </div>
   </div>
@@ -313,6 +313,16 @@ footer p{font-size:11px;color:var(--tx3);font-family:'JetBrains Mono',monospace}
           <div class="sk"><span class="sk-dot" style="background:var(--p)"></span><span class="sk-name">Ansible</span><span class="sk-note">Automation</span></div>
           <div class="sk"><span class="sk-dot" style="background:var(--p)"></span><span class="sk-name">Jenkins</span><span class="sk-note">CI/CD</span></div>
           <div class="sk"><span class="sk-dot" style="background:var(--p)"></span><span class="sk-name">Grafana Loki</span><span class="sk-note">Observability</span></div>
+        </div>
+      </div>
+      <div class="sk-group">
+        <div class="sk-glabel">AI &amp; Machine Learning</div>
+        <div class="sk-row">
+          <div class="sk"><span class="sk-dot" style="background:#a076ff"></span><span class="sk-name">LLM Integration</span><span class="sk-note">OpenAI &middot; Anthropic</span></div>
+          <div class="sk"><span class="sk-dot" style="background:#a076ff"></span><span class="sk-name">Prompt Engineering</span><span class="sk-note">RAG &middot; Agents</span></div>
+          <div class="sk"><span class="sk-dot" style="background:#a076ff"></span><span class="sk-name">ML Pipelines</span><span class="sk-note">Training &middot; Inference</span></div>
+          <div class="sk"><span class="sk-dot" style="background:#a076ff"></span><span class="sk-name">Vector DBs</span><span class="sk-note">Pinecone &middot; FAISS</span></div>
+          <div class="sk"><span class="sk-dot" style="background:#a076ff"></span><span class="sk-name">Python AI Stack</span><span class="sk-note">LangChain &middot; HuggingFace</span></div>
         </div>
       </div>
       <div class="sk-group">
@@ -400,7 +410,8 @@ footer p{font-size:11px;color:var(--tx3);font-family:'JetBrains Mono',monospace}
       <div class="pc rv" style="transition-delay:.12s"><div class="pc-glow" style="background:radial-gradient(circle,var(--p),transparent)"></div><div class="pnum">03</div><div class="pico" style="background:rgba(255,77,143,.08);border:1px solid rgba(255,77,143,.15)">&#127881;</div><h3>Birthday Invitation</h3><p>Digital invitation builder with themed templates, real-time preview and RSVP tracking.</p><div class="ptags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span></div></div>
       <div class="pc rv" style="transition-delay:.06s"><div class="pc-glow" style="background:radial-gradient(circle,var(--v),transparent)"></div><div class="pnum">04</div><div class="pico" style="background:rgba(124,77,255,.1);border:1px solid rgba(124,77,255,.15)">&#129518;</div><h3>MathQuiz</h3><p>Timed math quiz with randomized questions, progressive difficulty and streak scoring.</p><div class="ptags"><span class="ptag">JavaScript</span><span class="ptag">HTML</span><span class="ptag">CSS</span></div></div>
       <div class="pc rv" style="transition-delay:.12s"><div class="pc-glow" style="background:radial-gradient(circle,var(--t),transparent)"></div><div class="pnum">05</div><div class="pico" style="background:rgba(0,229,176,.08);border:1px solid rgba(0,229,176,.15)">&#9878;&#65039;</div><h3>BMI Calculator</h3><p>Health tool with dynamic result visualization, category indicators and responsive design.</p><div class="ptags"><span class="ptag">JavaScript</span><span class="ptag">HTML</span><span class="ptag">CSS</span></div></div>
-      <div class="pc rv" style="transition-delay:.18s;border-color:rgba(124,77,255,.12)"><div class="pnum" style="color:var(--tx3)">More</div><div class="pico" style="background:rgba(124,77,255,.05)">&#10022;</div><h3 style="color:var(--tx2)">In progress</h3><p style="color:var(--tx3)">Building cloud-native and ML projects as part of my MS program at CSUF.</p><div class="ptags"><span class="ptag" style="background:rgba(124,77,255,.08);border-color:rgba(124,77,255,.18);color:var(--v2)">Coming Soon</span></div></div>
+            <div class="pc rv" style="transition-delay:.06s"><div class="pc-glow" style="background:radial-gradient(circle,var(--v),transparent)"></div><div class="pnum">06</div><div class="pico" style="background:rgba(124,77,255,.1);border:1px solid rgba(124,77,255,.15)">&#129302;</div><h3>AI Chat Assistant</h3><p>LLM-powered conversational assistant using RAG architecture, vector embeddings and prompt engineering for context-aware responses.</p><div class="ptags"><span class="ptag">Python</span><span class="ptag">LangChain</span><span class="ptag">OpenAI</span><span class="ptag">FAISS</span></div></div>
+      <div class="pc rv" style="transition-delay:.12s;border-color:rgba(124,77,255,.12)"><div class="pnum" style="color:var(--tx3)">More</div><div class="pico" style="background:rgba(124,77,255,.05)">&#10022;</div><h3 style="color:var(--tx2)">In progress</h3><p style="color:var(--tx3)">Building cloud-native and ML projects as part of my MS program at CSUF.</p><div class="ptags"><span class="ptag" style="background:rgba(124,77,255,.08);border-color:rgba(124,77,255,.18);color:var(--v2)">Coming Soon</span></div></div>
     </div>
   </div>
 </section>
@@ -425,7 +436,7 @@ footer p{font-size:11px;color:var(--tx3);font-family:'JetBrains Mono',monospace}
       <h2 class="sec-title rv" style="transition-delay:.08s;text-align:center">Say <em>Hello</em></h2>
       <p class="cdesc rv" style="transition-delay:.14s">Open to exciting engineering roles, collaborations, or just a good conversation about tech.</p>
       <div class="cc rv" style="transition-delay:.2s">
-        <a href="mailto:aviyasingh95@gmail.com" class="cem"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>aviyasingh95@gmail.com</a>
+        <a href="/cdn-cgi/l/email-protection#4f2e3926362e3c26212827767a0f28222e2623612c2022" class="cem"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span class="__cf_email__" data-cfemail="e382958a9a82908a8d848bdad6a3848e828a8fcd808c8e">[email&#160;protected]</span></a>
         <div class="csocs">
           <a href="https://www.linkedin.com/in/aviya-singh-055562114/" target="_blank" class="cs"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn</a>
           <a href="https://www.instagram.com/aviya.singh15/" target="_blank" class="cs"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>Instagram</a>
@@ -440,7 +451,7 @@ footer p{font-size:11px;color:var(--tx3);font-family:'JetBrains Mono',monospace}
   <p>Crafted with &#9829; &middot; HTML &middot; CSS &middot; JS</p>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // Cursor
 const cr=document.getElementById('cr'),cr2=document.getElementById('cr2');
 let mx=innerWidth/2,my=innerHeight/2,tx=mx,ty=my;
@@ -452,7 +463,7 @@ document.querySelectorAll('a,button').forEach(el=>{
 });
 
 // Typewriter
-const phrases=['// python & react engineer','// building scalable systems','// 9+ years of craft','// software engineer @ geico'];
+const phrases=['// python & react engineer','// building scalable systems','// ai & ml enthusiast','// 9+ years of craft','// software engineer @ geico'];
 let pi=0,ci=0,dl=false,tel=document.getElementById('typed');
 function type(){
   const w=phrases[pi];
@@ -480,9 +491,4 @@ const pts=Array.from({length:80},()=>new P());
   requestAnimationFrame(draw);
 })();
 
-// Reveal
-const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')})},{threshold:.07,rootMargin:'0px 0px -28px 0px'});
-document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
-</script>
-</body>
-</html>
+// Re
